@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+    --font-principal: 'Signika Negative', sans-serif;
+    --font-principal2: 'Roboto', sans-serif;
+
+    --cor1: #2E3461;
+    --cor2: #E3E6FA;
+    --cor3: #6979E0;
+    --cor4: #4B4E61;
+    --cor5: #515EAD;
+    --cor6: #2c2d38;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #201f24c7,
+     #201F24 10%);
+    color: white;
+    margin: 0px;
+}
+
+section{
+    background-image: url(../midia/background-header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: var(--font-principal);
+    font-size: .7em;
+    height: 900px;
+    width: 100%;
+    margin: 0px;
+}
+
+div.consoles{
+    padding:5px;
+}
+
+h2.inlineH2{
+    display: inline;
+    position: absolute;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+img#play{
+    padding: 5px;
+    border-radius: 50px;
+    width: 35px;
+    transition-duration: 0.3s;
+}
+
+img#play:hover{
+    background-color: #138bc78a;
+    width: 40px;
+}
+
+img#xbox{
+    border-radius: 50px;
+    padding: 5px;
+    transition-duration: .3s;
+}
+
+img#xbox:hover{
+    background-color: rgba(0, 128, 0, 0.555);
+    width: 40px;
+}
+
+div.consoles > a{
+    text-decoration: none;
+}
+
+section > div.busca{
+    display: inline;
+    position: absolute;
+    right: 80px;
+    top: 10px;
+}
+
+input.buscar{
+    position: absolute;
+    background-color: #00000081;
+    background-image: url(../midia/lupa.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: var(--font-principal);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    line-height: none;
+    right: 10px;
+    top: 10px;
+}
+
+img#perfil{
+    position: absolute;
+    max-width: 36px;
+    top: 10px;
+    right: -60px;
+}
+
+main{
+    display: inline;
+    position: absolute;
+    background-color: #201f2400;
+    font-family: var(--font-principal2);
+    font-size: bold;
+    margin: 0px;
+    top: 273px;
+    left: 25px;
+}
+
+main > h2{
+    margin: 0px;
+}
+
+div.games{
+    display: inline-flex;
+    max-width: 100%;
+    min-width: 318px;
+    padding: 20px;
+}
+
+div.games > div{
+    padding: 10px;
+}
+
+img.image-games{
+    width: 180px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.caption{
+    position: absolute;
+    left: 20px;
+}
+
+.overlay{
+    font-family: var(--font-principal);
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.596);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: white;
+}
+
+.image-container:hover .overlay{
+    opacity: 1;
+}
