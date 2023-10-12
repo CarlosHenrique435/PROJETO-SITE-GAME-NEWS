@@ -13,6 +13,10 @@
     --cor6: #2c2d38;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     background-image: linear-gradient(to bottom, #201f24c7,
      #201F24 10%);
@@ -117,10 +121,10 @@ main > h2{
 }
 
 div.games{
-    display: inline-flex;
-    max-width: 100%;
-    min-width: 318px;
-    padding: 20px;
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    left: -70px;
 }
 
 div.games > div{
@@ -158,4 +162,14 @@ img.image-games{
 
 .image-container:hover .overlay{
     opacity: 1;
+}
+
+div.posD{
+    position: sticky;
+    right: 0;
+    background-color: transparent;
+}
+div.posE{
+    position: sticky;
+    left: 0;
 }

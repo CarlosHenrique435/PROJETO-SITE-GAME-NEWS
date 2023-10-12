@@ -10,6 +10,15 @@ if(window.innerWidth < 600){
     lupa.appendChild(lupa_img)
     altera_size.style.width = '32px'
 }
+
+const tam = document.getElementById('games')
+const btn = document.getElementById('pos')
+var posiLeft = -80
+
+btn.addEventListener('click', ()=>{
+    tam.style.left = `${posiLeft-335}px`
+})
+
 window.addEventListener("resize", () => {
     const width = window.innerWidth
     
